@@ -81,21 +81,25 @@ class SimpleCalculator{
           str = "";
           a = 1;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 1;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 1;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 1;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -105,21 +109,25 @@ class SimpleCalculator{
           str = "";
           a = 2;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 2;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 2;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 2;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -129,21 +137,25 @@ class SimpleCalculator{
           str = "";
           a = 3;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 3;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 3;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 3;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -153,21 +165,25 @@ class SimpleCalculator{
           str = "";
           a = 4;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 4;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 4;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 4;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -177,21 +193,25 @@ class SimpleCalculator{
           str = "";
           a = 5;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 5;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 5;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 5;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -201,21 +221,25 @@ class SimpleCalculator{
           str = "";
           a = 6;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 6;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 6;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 6;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -225,21 +249,25 @@ class SimpleCalculator{
           str = "";
           a = 7;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 7;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 7;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 7;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -249,21 +277,25 @@ class SimpleCalculator{
           str = "";
           a = 8;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 8;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 8;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 8;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -273,21 +305,25 @@ class SimpleCalculator{
           str = "";
           a = 9;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 9;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 9;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 9;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
@@ -297,21 +333,25 @@ class SimpleCalculator{
           str = "";
           a = 0;
           track2 = 1;
+          label.setText(Integer.toString(a));
         }
         if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
           str = "";
           b = 0;
           track2 = 1;
+          label.setText(Integer.toString(b));
         }
         if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
             str = str + "" + 0;
             a = Integer.parseInt(str);
             System.out.println(a);
+            label.setText(str);
         }
         if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
             str = str + "" + 0;
             b = Integer.parseInt(str);
             System.out.println(b);
+            label.setText(str);
         }
       }
     });
