@@ -13,43 +13,48 @@ class ChineseHoroscope{
 
     year = Integer.parseInt(birthYear);
 
-    if(year % 12 == 4){
-      JOptionPane.showMessageDialog(frame, "You are a rat!");
-    }
-    if(year % 12 == 5){
-      JOptionPane.showMessageDialog(frame, "You are an ox!");
-    }
-    if(year % 12 == 6){
-      JOptionPane.showMessageDialog(frame, "You are a tiger!");
-    }
-    if(year % 12 == 7){
-      JOptionPane.showMessageDialog(frame, "You are a rabbit!");
-    }
-    if(year % 12 == 8){
-      JOptionPane.showMessageDialog(frame, "You are a dragon!");
-    }
-    if(year % 12 == 9){
-      JOptionPane.showMessageDialog(frame, "You are a snake!");
-    }
-    if(year % 12 == 10){
-      JOptionPane.showMessageDialog(frame, "You are a horse!");
-    }
-    if(year % 12 == 11){
-      JOptionPane.showMessageDialog(frame, "You are a goat!");
-    }
-    if(year % 12 == 0){
-      JOptionPane.showMessageDialog(frame, "You are a monkey!");
-    }
-    if(year % 12 == 1){
-      JOptionPane.showMessageDialog(frame, "You are a rooster!");
-    }
-    if(year % 12 == 2){
-      JOptionPane.showMessageDialog(frame, "You are a dog!");
-    }
-    if(year % 12 == 3){
-      JOptionPane.showMessageDialog(frame, "You are a pig!");
+    String message = "";
+
+    switch (year % 12) {
+      case 4:
+      message = "You are a rat!";
+      break;
+      case 5:
+      message = "You are an ox!";
+      break;
+      case 6:
+      message = "You are a tiger!";
+      break;
+      case 7:
+      message = "You are a rabbit!";
+      break;
+      case 8:
+      message = "You are a dragon!";
+      break;
+      case 9:
+      message = "You are a snake!";
+      break;
+      case 10:
+      message = "You are a horse!";
+      break;
+      case 11:
+      message = "You are a goat!";
+      break;
+      case 0:
+      message = "You are a monkey!";
+      break;
+      case 1:
+      message = "You are a rooster!";
+      break;
+      case 2:
+      message = "You are a dog!";
+      break;
+      case 3:
+      message = "You are a pig!";
+      break;
     }
 
+    JOptionPane.showMessageDialog(frame, message);
     System.exit(0);
   }
 }
