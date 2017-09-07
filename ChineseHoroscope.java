@@ -13,44 +13,44 @@ class ChineseHoroscope{
 
     year = Integer.parseInt(birthYear);
 
-    String message = "";
+    String message = "You are a ";
 
     switch (year % 12) {
       case 4:
-      message = "You are a rat!";
+      message = message + "rat!";
       break;
       case 5:
       message = "You are an ox!";
       break;
       case 6:
-      message = "You are a tiger!";
+      message = message + "tiger!";
       break;
       case 7:
-      message = "You are a rabbit!";
+      message = message + "rabbit!";
       break;
       case 8:
-      message = "You are a dragon!";
+      message = message + "dragon!";
       break;
       case 9:
-      message = "You are a snake!";
+      message = message + "snake!";
       break;
       case 10:
-      message = "You are a horse!";
+      message = message + "horse!";
       break;
       case 11:
-      message = "You are a goat!";
+      message = message + "goat!";
       break;
       case 0:
-      message = "You are a monkey!";
+      message = message + "monkey!";
       break;
       case 1:
-      message = "You are a rooster!";
+      message = message + "rooster!";
       break;
       case 2:
-      message = "You are a dog!";
+      message = message + "dog!";
       break;
       case 3:
-      message = "You are a pig!";
+      message = message + "pig!";
       break;
     }
 
