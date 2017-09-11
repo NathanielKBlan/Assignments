@@ -77,282 +77,52 @@ class SimpleCalculator{
     panel.add(zero);
     one.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 1;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 1;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 1;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 1;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(1);
       }
     });
     two.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 2;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 2;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 2;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 2;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(2);
       }
     });
     three.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 3;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 3;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 3;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 3;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(3);
       }
     });
     four.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 4;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 4;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 4;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 4;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(4);
       }
     });
     five.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 5;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 5;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 5;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 5;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(5);
       }
     });
     six.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 6;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 6;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 6;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 6;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(6);
       }
     });
     seven.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 7;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 7;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 7;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 7;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(7);
       }
     });
     eight.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 8;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 8;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 8;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 8;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(8);
       }
     });
     nine.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 9;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 9;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 9;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 9;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(9);
       }
     });
     zero.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        if(track2 == 0 && added == false && subtracted == false && multiplied == false && divided == false){
-          str = "";
-          a = 0;
-          track2 = 1;
-          label.setText(Integer.toString(a));
-        }
-        if(track2 == 0 && added == true || track2 == 0 && subtracted == true || track2 == 0 && multiplied == true || track2 == 0 && divided == true){
-          str = "";
-          b = 0;
-          track2 = 1;
-          label.setText(Integer.toString(b));
-        }
-        if(track2 == 1 && added == false && subtracted == false && multiplied == false && divided == false){
-            str = str + "" + 0;
-            a = Integer.parseInt(str);
-            System.out.println(a);
-            label.setText(str);
-        }
-        if(track2 == 1 && added == true || track2 == 1 && subtracted == true || track2 == 1 && multiplied == true || track2 == 1 && divided == true){
-            str = str + "" + 0;
-            b = Integer.parseInt(str);
-            System.out.println(b);
-            label.setText(str);
-        }
+        numberButtonPress(0);
       }
     });
     add.addActionListener(new ActionListener() {
@@ -379,39 +149,23 @@ class SimpleCalculator{
         track2 = 0;
       }
     });
+
+
     equals.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         calculate = true;
-        if(added == true){
-          c = a + b;
-          answer = "" + c;
-          System.out.println(answer);
-          added = false;
-          calculate = false;
-          track2 = 0;
+
+        if(added){
+          equalsPressed("add");
         }
-        if(subtracted == true){
-          c = a - b;
-          answer = "" + c;
-          subtracted = false;
-          calculate = false;
-          track2 = 0;
+        if(subtracted){
+          equalsPressed("subtract");
         }
-        if(multiplied == true){
-          c = a * b;
-          answer = "" + c;
-          multiplied = false;
-          calculate = false;
-          track2 = 0;
+        if(multiplied){
+          equalsPressed("multiply");
         }
-        if(divided == true){
-          g = a;
-          f = b;
-          d = g / f;
-          answer = "" + d;
-          divided = false;
-          calculate = false;
-          track2 = 0;
+        if(divided){
+          equalsPressed("divide");
         }
         label.setText(answer);
       }
@@ -422,5 +176,54 @@ class SimpleCalculator{
     frame.add(panel);
   }
 
+  public static void equalsPressed(String operation) {
+     if (operation == "add") {
+       c = a + b;
+       added = false;
+     }
+     if (operation == "subtract") {
+       c = a - b;
+       subtracted = false;
+     }
+     if (operation == "multiply") {
+       c = a * b;
+       multiplied = false;
+     }
+     if (operation == "divide") {
+       c = a / b;
+       divided = false;
+     }
 
+     answer = "" + c;
+     System.out.println(answer);
+     calculate = false;
+     track2 = 0;
+  }
+
+  public static void numberButtonPress(int i){
+    if(track2 == 0 && !added && !subtracted && !multiplied && !divided){
+      a = i;
+      str = "";
+      track2 = 1;
+      label.setText(Integer.toString(a));
+    }
+    if(track2 == 0 && added || track2 == 0 && subtracted || track2 == 0 && multiplied || track2 == 0 && divided ){
+      b = i;
+      str = "";
+      track2 = 1;
+      label.setText(Integer.toString(b));
+    }
+    if(track2 == 1 && !added && !subtracted && !multiplied && !divided){
+        str = str + "" + i;
+        a = Integer.parseInt(str);
+        System.out.println(a);
+        label.setText(str);
+    }
+    if(track2 == 1 && added || track2 == 1 && subtracted || track2 == 1 && multiplied || track2 == 1 && divided ){
+        str = str + "" + i;
+        b = Integer.parseInt(str);
+        System.out.println(b);
+        label.setText(str);
+    }
+  }
 }
