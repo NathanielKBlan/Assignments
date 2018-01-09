@@ -7,8 +7,8 @@ public class Sentence{
 
   private static String sentence;
 
-  public Sentence(String sentence) {
-  this.sentence = sentence;
+  public Sentence(String sent) {
+  this.sentence = sent;
 
   }
 
@@ -17,6 +17,13 @@ public class Sentence{
   *   sentence, returns an empty list.
   */
 
+  public static String getSentence(){
+    return sentence;
+  }
+
+  public static void setSentence(String str){
+    sentence = str;
+  }
   public static List<Integer> getBlankPositions(){
     List<Integer> blanks = new ArrayList<Integer>();
     for(int i = 0; i <= sentence.length() - 1; i++){
