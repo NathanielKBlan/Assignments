@@ -34,9 +34,10 @@ public class GraphicsPanel extends JPanel {
         displayArray();
     } // end
     public void createArray(){
+      g2.setColor(Color.RED);
       for(int r = 0; r < crcls.length; r++){
         for(int c = 0; c < crcls[r].length; c++){
-          crcls[r][c] = new Circle(40*(r+5), 40*(c+5), 50, Color.BLUE, Color.RED);
+          crcls[r][c] = new Circle(40 * (r), 40 * (c), 50, Color.BLUE, Color.RED);
           System.out.println(r + " : " + c);
         }
       }

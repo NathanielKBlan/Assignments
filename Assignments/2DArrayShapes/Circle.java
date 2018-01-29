@@ -18,7 +18,8 @@ public class Circle extends Shape{
 
   public void draw(Graphics2D g){
     System.out.println("Drawing a circle");
-    g.setColor(bCColor);
+    g.setColor(fCColor);
+    g.fillOval(xCoord, yCoord, radius, radius);
     g.drawOval(xCoord, yCoord, radius, radius);
   }
 }
