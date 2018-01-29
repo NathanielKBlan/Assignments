@@ -6,6 +6,7 @@ public class Shape{
   Color bColor;
   Color fColor;
   int value;
+  String val;
 
   public Shape(int x, int y, Color bColor, Color fColor){
     this.xCoord = x;

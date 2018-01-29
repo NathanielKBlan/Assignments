@@ -4,8 +4,10 @@ public class Circle extends Shape{
   int radius;
   int xCoord;
   int yCoord;
+  int value;
   Color bCColor;
   Color fCColor;
+  String val;
 
   public Circle(int x, int y, int radius, Color bColor, Color fColor){
     super(x, y, bColor, fColor);
@@ -17,9 +19,11 @@ public class Circle extends Shape{
   }
 
   public void draw(Graphics2D g){
+    System.out.println(value);
     System.out.println("Drawing a circle");
     g.setColor(fCColor);
     g.fillOval(xCoord, yCoord, radius, radius);
+    g.setColor(bCColor);
     g.drawOval(xCoord, yCoord, radius, radius);
   }
 }
