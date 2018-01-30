@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Shape{
+public abstract class Shape{
   int xCoord;
   int yCoord;
   Color bColor;
@@ -11,7 +11,8 @@ public class Shape{
   public Shape(int x, int y, Color bColor, Color fColor){
     this.xCoord = x;
     this.yCoord = y;
-    this.value = (int) Math.round(Math.random() * 9) + 1;
   }
+
+  public void draw(Graphics2D g){}
 
 }

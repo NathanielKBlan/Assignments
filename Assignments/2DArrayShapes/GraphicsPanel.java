@@ -7,6 +7,7 @@ public class GraphicsPanel extends JPanel {
     Square[][] sqrs = new Square[10][10];
     Circle[][] crcls = new Circle[10][10];
     Graphics2D g2;
+
     //int value = Shape.value;
 
 
@@ -46,8 +47,8 @@ public class GraphicsPanel extends JPanel {
     public void displayArray(){
       for(int r = 0; r < crcls.length; r++){
         for(int c = 0; c < crcls[r].length; c++){
-
           crcls[r][c].draw(g2);
+          //g2.drawString(crcls[r][c].val, 18 * r, 30 * c);
         }
       }
     }
