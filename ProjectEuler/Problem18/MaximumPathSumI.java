@@ -9,7 +9,7 @@ public class MaximumPathSumI{
 
     int leftSum = 0;
 
-    int tri[][] =          {75},
+    int[][] tri = new int[][] {75},
                          {95, 64},
                        {17, 47, 82},
                      {18, 35, 87, 10},

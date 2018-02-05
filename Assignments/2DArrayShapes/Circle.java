@@ -22,12 +22,6 @@ public class Circle extends Shape{
   public void draw(Graphics2D g){
     val = value + "";
     System.out.println("Drawing a circle");
-    if(value % 2 == 0){
-      fCColor = Color.RED;
-    }
-    if(value % 2 == 1){
-      fCColor = Color.GREEN;
-    }
     g.setColor(fCColor);
     g.fillOval(xCoord, yCoord, radius, radius);
     g.setColor(bCColor);
