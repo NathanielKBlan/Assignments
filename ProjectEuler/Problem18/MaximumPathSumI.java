@@ -1,15 +1,22 @@
+import java.util.*;
 
 public class MaximumPathSumI{
 
-    int position = 0;
+    static int position = 0;
 
-    int row = 0;
+    static int row = 0;
 
-    int rightSum = 0;
+    static int rightSum = 0;
 
-    int leftSum = 0;
+    static int leftSum = 0;
 
-    int[][] tri = new int[][] {75},
+    static int total = 0;
+
+    static int left = 0;
+
+    static int right = 0;
+
+    static int[][] tri =  {{75},
                          {95, 64},
                        {17, 47, 82},
                      {18, 35, 87, 10},
@@ -23,16 +30,21 @@ public class MaximumPathSumI{
       {70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57},
      {91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48},
    {63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31},
-  {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23};
+  {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23}};
+
+  static int[][] pract = {{3},
+                         {7, 4},
+                         {2, 4 , 6},
+                         {8, 5, 9, 3}};
 
     public static void main(String[] args) {
-
+      getRightSum();
     }
 
-    static int greaterSum(){
-      for(int i = 0; i <= 14; i++){
-        rightSum = rightSum + tri[row][position];
-        System.out.println(rightSum);
-      }
+    public static int getRightSum(){
+      List<int[]> tri = new ArrayList<int[]>(Arrays.asList(pract));
+      tri.remove(0);
+      tri.remove(1);
+      return 0;
     }
 }

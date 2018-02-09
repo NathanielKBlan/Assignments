@@ -41,69 +41,72 @@ public class GraphicsPanel extends JPanel {
         //oddEven();
         displayArray();
     } // end
+
     public void createArray(){
       g2.setColor(Color.RED);
-      for(r = 0; r < crcls.length; r++){
-        for(c = 0; c < crcls[r].length; c++){
-          crcls[r][c] = new Circle(52 * r, 52 * c, 50, Color.BLUE, Color.RED);
+      for(r = 0; r < rects.length; r++){
+        for(c = 0; c < rects[r].length; c++){
+          //You have to adjust x and y coordinates according to your width, height, and radius.
+          //For circles object[][] = new Circle(x, y, radius, background color, trace color);
+          rects[r][c] = new Rectangle(120 * r, 52 * c, 120, 50, Color.BLUE, Color.RED);
           System.out.println(r + " : " + c);
         }
       }
     }
     public void displayArray(){
-      for(int r = 0; r < crcls.length; r++){
-        for(int c = 0; c < crcls[r].length; c++){
-          crcls[r][c].draw(g2);
-          //g2.drawString(crcls[r][c].val, 18 * r, 30 * c);
+      for(int r = 0; r < rects.length; r++){
+        for(int c = 0; c < rects[r].length; c++){
+          rects[r][c].draw(g2);
+          //g2.drawString(rects[r][c].val, 18 * r, 30 * c);
         }
       }
     }
 
     public void borderPattern(){
-      for(r = 0; r < crcls.length; r++){
-        for(c = 0; c < crcls[r].length; c++){
-          if(r == 0 || r == crcls.length - 1){
-            crcls[r][c].fCColor = Color.CYAN;
+      for(r = 0; r < rects.length; r++){
+        for(c = 0; c < rects[r].length; c++){
+          if(r == 0 || r == rects.length - 1){
+            rects[r][c].fCColor = Color.CYAN;
           }
-          if(c == 0 || c == crcls[r].length - 1){
-            crcls[r][c].fCColor = Color.CYAN;
+          if(c == 0 || c == rects[r].length - 1){
+            rects[r][c].fCColor = Color.CYAN;
           }
         }
       }
     }
 
     public void xPattern(){
-      for(r = 0; r < crcls.length; r++){
-        for(c = 0; c < crcls[r].length; c++){
+      for(r = 0; r < rects.length; r++){
+        for(c = 0; c < rects[r].length; c++){
           if(r == c){
-            crcls[r][c].fCColor = Color.CYAN;
+            rects[r][c].fCColor = Color.CYAN;
           }
           if(r + c == 9){
-            crcls[r][c].fCColor = Color.CYAN;
+            rects[r][c].fCColor = Color.CYAN;
           }
         }
       }
     }
 
     public void threePattern(){
-      for(r = 0; r < crcls.length; r++){
-        for(c = 0; c < crcls[r].length; c++){
+      for(r = 0; r < rects.length; r++){
+        for(c = 0; c < rects[r].length; c++){
           if(r % 3 == 0 && c % 3 == 0){
-            crcls[r][c].fCColor = Color.CYAN;
+            rects[r][c].fCColor = Color.CYAN;
           }
         }
       }
     }
 
     public void oddEven(){
-      for(r = 0; r < crcls.length; r++){
-        for(c = 0; c < crcls[r].length; c++){
+      for(r = 0; r < rects.length; r++){
+        for(c = 0; c < rects[r].length; c++){
           if(r % 3 == 0 && c % 3 == 0){
-            if(crcls[r][c].value % 2 == 0){
-              crcls[r][c].fCColor = Color.RED;
+            if(rects[r][c].value % 2 == 0){
+              rects[r][c].fCColor = Color.RED;
             }
-            if(crcls[r][c].value % 2 == 1){
-              crcls[r][c].fCColor = Color.GREEN;
+            if(rects[r][c].value % 2 == 1){
+              rects[r][c].fCColor = Color.GREEN;
             }
           }
         }

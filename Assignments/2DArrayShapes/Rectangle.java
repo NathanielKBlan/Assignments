@@ -5,8 +5,10 @@ public class Rectangle extends Square{
   int yCoord;
   int width;
   int height;
-  Color bRColor;
-  Color fRColor;
+  int value = (int) Math.round(Math.random() * 9) + 1;
+  String val = "";
+  Color bCColor;
+  Color fCColor;
 
   public Rectangle(int x, int y, int width, int height, Color bColor, Color fColor){
     super(x, y, width, bColor, fColor);
@@ -14,13 +16,18 @@ public class Rectangle extends Square{
     this.yCoord = y;
     this.height = height;
     this.width = width;
-    this.bRColor = bColor;
-    this.fRColor = fColor;
+    this.bCColor = bColor;
+    this.fCColor = fColor;
   }
 
   public void draw(Graphics2D g){
+    val = value + "";
     System.out.println("Drawing a rectangle");
+    g.setColor(fCColor);
+    g.fillRect(xCoord, yCoord, width, height);
+    g.setColor(bCColor);
     g.drawRect(xCoord, yCoord, width, height);
+    g.drawString(val,xCoord+(width/2) - 5,yCoord+(height/2) + 5);
   }
 
 }
