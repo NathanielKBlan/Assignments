@@ -1,9 +1,9 @@
 import javax.swing.JFrame;
 
 public class GraphicsMain {
-    
+
     public static void main(String[] args) {
-        JFrame window = new JFrame("Java Graphics!");
+        JFrame window = new JFrame("Shapes and Fun!");
         GraphicsPanel content = new GraphicsPanel();
         window.setContentPane(content);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

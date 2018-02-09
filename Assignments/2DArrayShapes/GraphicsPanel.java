@@ -37,8 +37,8 @@ public class GraphicsPanel extends JPanel {
         createArray();
         //borderPattern();
         //xPattern();
-        threePattern();
-        //oddEven();
+        //threePattern();
+        oddEven();
         displayArray();
     } // end
 
@@ -48,7 +48,7 @@ public class GraphicsPanel extends JPanel {
         for(c = 0; c < rects[r].length; c++){
           //You have to adjust x and y coordinates according to your width, height, and radius.
           //For circles object[][] = new Circle(x, y, radius, background color, trace color);
-          rects[r][c] = new Rectangle(120 * r, 52 * c, 120, 50, Color.BLUE, Color.RED);
+          rects[r][c] = new Rectangle(52 * r, 52 * c, 50, 50, Color.BLUE, Color.RED);
           System.out.println(r + " : " + c);
         }
       }
@@ -101,14 +101,12 @@ public class GraphicsPanel extends JPanel {
     public void oddEven(){
       for(r = 0; r < rects.length; r++){
         for(c = 0; c < rects[r].length; c++){
-          if(r % 3 == 0 && c % 3 == 0){
             if(rects[r][c].value % 2 == 0){
               rects[r][c].fCColor = Color.RED;
             }
             if(rects[r][c].value % 2 == 1){
-              rects[r][c].fCColor = Color.GREEN;
+              rects[r][c].fCColor = Color.BLACK;
             }
-          }
         }
       }
     }
