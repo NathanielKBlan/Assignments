@@ -35,10 +35,10 @@ public class GraphicsPanel extends JPanel {
         int height = getHeight();
 
         createArray();
-        //borderPattern();
+        borderPattern();
         //xPattern();
         //threePattern();
-        oddEven();
+        //oddEven();
         displayArray();
     } // end
 
