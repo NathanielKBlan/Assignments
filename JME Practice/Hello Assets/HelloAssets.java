@@ -6,6 +6,10 @@ import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Box;
+import com.jme3.asset.plugins.ZipLocator;
+import com.jme3.export.binary.BinaryExporter;
+import java.io.IOException;
+import java.io.File;
 
 public class HelloAssets extends SimpleApplication{
 
@@ -16,6 +20,35 @@ public class HelloAssets extends SimpleApplication{
 
     @Override
     public void simpleInitApp(){
+
+      /** Important code bellow!!!
+      * Since I am not using the software development kit this code will serve
+      * to convert model files to a j3o format */
+
+      //BinaryExporter b = new BinaryExporter();
+      //Spatial gameLevel = assetManager.loadModel("assets/Scenes/town/main.scene");
+
+      //try{
+        //b.getInstance().save(gameLevel, new File("assets/Scenes/town/" + "main.j3o"));
+      //}catch(IOException e){
+        //System.out.println("Uhh oh.");
+      //}
+
+
+      /** Registers a ziplocator */
+      //assetManager.registerLocator("town.zip", ZipLocator.class);
+      //Spatial gameLevel = assetManager.loadModel("main.scene");
+      //gameLevel.setLocalTranslation(0, -5.2f, 0);
+      //gameLevel.setLocalScale(2);
+      //rootNode.attachChild(gameLevel);
+
+      /** Same as previous lines of code in that it loads a scene,
+      * except this will do so with a j3o file which jme3 uses allot */
+      Spatial gameLevel = assetManager.loadModel("assets/Scenes/town/main.j3o");
+      gameLevel.setLocalTranslation(0, -5.2f, 0);
+      gameLevel.setLocalScale(2);
+      rootNode.attachChild(gameLevel);
+
       /** Creats a spatial called teapot using a saved model and assigning a default material to it*/
       Spatial teapot = assetManager.loadModel("Models/Teapot/Teapot.obj");
       Material mat_default = new Material(assetManager, "Common/MatDefs/Misc/ShowNormals.j3md");
@@ -50,7 +83,7 @@ public class HelloAssets extends SimpleApplication{
 
       //Model needs light to be visible
       DirectionalLight sun = new DirectionalLight();
-      sun.setDirection(new Vector3f(-0.1f, -0.7f, -1.0f));
+      sun.setDirection(new Vector3f(-0.1f, -0.7f, -1.0f).normalizeLocal());
       rootNode.addLight(sun);
     }
 }
