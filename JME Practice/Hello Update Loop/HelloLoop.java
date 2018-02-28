@@ -13,9 +13,9 @@ public class HelloLoop extends SimpleApplication{
 
   protected Geometry player;
   protected Geometry npc;
-  protected int s = 1;
-  //int rotations = (int) Math.round(Math.random() * 3) + 20;
-  //int i = 0;
+  protected float s = 1.0001f;
+  protected float a = 1.0f;
+  protected float count = 1;
 
   @Override
   public void simpleInitApp(){
@@ -42,8 +42,13 @@ public class HelloLoop extends SimpleApplication{
   @Override
   public void simpleUpdate(float tpf){
 
-      player.rotate(0, 2*tpf, 0);
-      npc.rotate(0, 4*tpf, 0);
+    if(count % 2 != 0){
+      player.scale(s);
+      count++;
+    }else{
+      player.scale(a);
+      count++;
+    }
 
   }
 
