@@ -42,13 +42,8 @@ public class HelloLoop extends SimpleApplication{
   @Override
   public void simpleUpdate(float tpf){
 
-    if(count % 2 != 0){
-      player.scale(s);
-      count++;
-    }else{
-      player.scale(a);
-      count++;
-    }
+    // make the player rotate:
+        player.rotate(0, 2*tpf, 0);
 
   }
 
