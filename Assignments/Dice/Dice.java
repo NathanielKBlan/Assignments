@@ -34,6 +34,7 @@ public class Dice extends SimpleApplication{
   int face3;
   int face4;
   int r = 0;
+  int average = 36;
 
   Node pivot;
   Node pivot2;
@@ -108,9 +109,6 @@ public class Dice extends SimpleApplication{
                     FaceValue val = new FaceValue(face, face2);
                     FaceValue val2 = new FaceValue(face3, face4);
 
-                    System.out.println(face + " " + face2 + " " + val.value());
-                    System.out.println(face3 + " " + face4 + " " + val2.value());
-
                     float[] angles = {face2*FastMath.DEG_TO_RAD, face*FastMath.DEG_TO_RAD, 0.0f};
                     float[] angles2 = {face4*FastMath.DEG_TO_RAD, face3*FastMath.DEG_TO_RAD, 0.0f};
                     Quaternion q = new Quaternion(angles);
@@ -128,11 +126,12 @@ public class Dice extends SimpleApplication{
 
                     if(val.value() == val2.value() && r >= 1){
                         rolls++;
+                        average = (rolls + average) / 2;
                         helloText.setText("Congrats! You rolled a double and it only took you " + rolls + " tries.");
                         rolls = 0;
                     }else{
                         rolls++;
-                        helloText.setText("Rolls to double: " + rolls);
+                        helloText.setText("Rolls to double: " + rolls + ". Average # of rolls to double " + average);
                     }
 
                     guiNode.attachChild(helloText);
