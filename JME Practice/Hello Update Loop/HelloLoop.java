@@ -3,6 +3,7 @@ import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
+import com.jme3.math.FastMath;
 
 public class HelloLoop extends SimpleApplication{
 
@@ -13,9 +14,7 @@ public class HelloLoop extends SimpleApplication{
 
   protected Geometry player;
   protected Geometry npc;
-  protected float s = 1.0001f;
-  protected float a = 1.0f;
-  protected float count = 1;
+  protected Material mat;
 
   @Override
   public void simpleInitApp(){
@@ -23,7 +22,7 @@ public class HelloLoop extends SimpleApplication{
     /** The blue box will be the player character */
     Box b = new Box(1, 1, 1);
     player = new Geometry("player", b);
-    Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+    mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
     mat.setColor("Color", ColorRGBA.Blue);
     player.setMaterial(mat);
     rootNode.attachChild(player);
@@ -42,9 +41,20 @@ public class HelloLoop extends SimpleApplication{
   @Override
   public void simpleUpdate(float tpf){
 
-    // make the player rotate:
-        player.rotate(0, 2*tpf, 0);
+   float timeInSec = timer.getTimeInSeconds();
+   float initialScale = 1.0f;
+   float amplitude = 0.75f;
+   float angularFrequency = 1.0f;
+   float scale = initialScale + (float)(amplitude * Math.sin(timeInSec * angularFrequency));
+   player.setLocalScale(scale);
 
+   if((int) timeInSec % 5 == 0){
+     mat.setColor("Color", ColorRGBA.White);
+   }else{
+     mat.setColor("Color", ColorRGBA.Blue);
+   }
+
+   player.rotate(tpf, 0, 0);
+   player.setLocalTranslation(0, 0, timeInSec);
   }
-
 }

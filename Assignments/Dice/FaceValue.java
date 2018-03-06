@@ -10,6 +10,7 @@ public class FaceValue{
   }
 
   public int value(){
+
     if(yaw == 180 && pitch == 270 || yaw == 360 && pitch == 90 || yaw == 0 && pitch == 90)
       return 1;
     if(yaw == 180 && pitch == 180 || yaw == 360 && pitch == 360 || yaw == 0 && pitch == 0 || yaw == 0 && pitch == 360 || yaw == 360 && pitch == 0)
