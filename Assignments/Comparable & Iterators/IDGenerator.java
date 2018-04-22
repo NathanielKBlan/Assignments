@@ -7,7 +7,6 @@ public class IDGenerator{
   }
 
   public String randomID(){
-
     String id = "";
     ArrayList<String> takenIds = new ArrayList<String>();
     int randomLength = (int) (Math.round(Math.random() * 1000) + 1);
@@ -21,8 +20,10 @@ public class IDGenerator{
       return randomID();
     }else{
       takenIds.add(id);
+      alphabeticalSelectionSort(takenIds);
       return id;
     }
+
   }
 
   public String determineCharacter(int n){
@@ -80,5 +81,21 @@ public class IDGenerator{
       return "z";
     else
       return null;
+  }
+
+  public void alphabeticalSelectionSort(ArrayList<String> widgetIds){
+    for(int i = 1; i < widgetIds.size(); i++){
+      int min = i;
+
+      for(int j = min; j < widgetIds.size(); j++){
+        if(widgetIds.get(min).compareToIgnoreCase(widgetIds.get(j)) > 0){
+          min = j;
+        }
+      }
+
+      String temp = widgetIds.get(i);
+      widgetIds.set(i, widgetIds.get(min));
+      widgetIds.set(min, temp);
+    }
   }
 }

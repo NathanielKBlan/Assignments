@@ -16,9 +16,12 @@ public class Inventory{
     }
 
     public void creatInventory(){
+      long startTime = System.nanoTime();
       for(int i = 0; i <= widgetsAmount; i++){
         widgetCollection.add(new Widget(generator.randomID()));
       }
+      long endTime = System.nanoTime();
+      System.out.println("Time to generate inventory: " + (double) (endTime - startTime)/1000000 + " ms" );
     }
 
     public ArrayList<Widget> extractWidgets(Widget w, String comparison){

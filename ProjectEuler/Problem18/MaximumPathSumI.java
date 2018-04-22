@@ -24,33 +24,7 @@ public class MaximumPathSumI{
                        {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23}};
 
     public static void main(String[] args) {
-      int index = 0;
-      int sum = 3;
-      for(int i = 0; i < pract.length; i++){
-        if(rightSum(i, index) > leftSum(i, index)){
-          index++;
-          sum = sum + pract[i][index];
-        }
-        if(leftSum(i, index) > rightSum(i, index)){
-          sum = sum + pract[i][index];
-        }
-      }
+
     }
 
-    public static int rightSum(int i, int index){
-      int rs = pract[i][index];
-      for(int r = i + 1; r < pract.length; r++){
-        System.out.println(pract[r][index + r]);
-        rs = rs + pract[r][index + r];
-      }
-      return rs;
-    }
-
-    public static int leftSum(int i, int index){
-      int ls = pract[i][index];
-      for(int r = i + 1; r < pract.length; r++){
-        ls = ls + pract[r][index];
-      }
-      return ls;
-    }
 }

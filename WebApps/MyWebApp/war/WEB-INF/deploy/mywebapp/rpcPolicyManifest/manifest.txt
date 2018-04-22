@@ -1,0 +1,3 @@
+# Module mywebapp
+# RPC service class, partial path of RPC policy file
+com.nathanielkblan.mywebbapp.client.GreetingService, 67445B4F855167BF3974C188A452F670.gwt.rpc

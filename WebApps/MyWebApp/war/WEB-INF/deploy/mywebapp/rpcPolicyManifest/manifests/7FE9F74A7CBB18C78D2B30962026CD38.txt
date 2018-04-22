@@ -1,0 +1,2 @@
+serviceClass: com.nathanielkblan.mywebbapp.client.GreetingService
+path: 67445B4F855167BF3974C188A452F670.gwt.rpc
