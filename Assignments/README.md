@@ -1,5 +1,5 @@
 # Assignments
-Assignments for AP Computer Science
+Assignments for AP Computer Science. (some code not in full version, fixing bugs).
 
 # How to use
 ## SimpleCalculator
